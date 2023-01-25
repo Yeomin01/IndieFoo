@@ -57,21 +57,28 @@ p {
 	display: inline-block;
 	border-radius: 50px !important;
 	padding: 10px 30px;
-	color: #ffffff;
-	background-color: #FE6421;
+	color: #ffe1e1;
+	background-color: #d3480c;
 	text-align: center;
 	margin-top: 30px;
 	transition: 0.3s ease;
 	transition-property: background-color, color;
 }
 .cta:hover {
-	color: #ffe1e1;
-	background-color: #d3480c;
+	background-color: #d75a25;
+	color: #ffffff;
 }
 .brand img {
-	padding: 30px 0px;
+	position: static;
+	padding: 30px 20px;
 }
 
+.explore_btn {
+	display: block;
+	position: relative;
+	width: 150px;
+	bottom: -20em;
+}
 /* Header section */
 #header {
 	position: fixed;
@@ -88,34 +95,25 @@ p {
 #header .nav-bar {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content:space-between;
 	width: 100%;
 	height: 100%;
-	max-width: 1300px;
-	padding: 0 0px;
+	max-width: 1430px;
+	padding: 0px;
 }
 
-#header .nav-lan {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-	height: 100%;
-	max-width: 1300px;
-	padding: 0 10px;
-}
 
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
-	background-color: rgb(31, 30, 30);
+	background-color: #f3682d;
 	width: 100vw;
 	height: 100vh;
 	left: 100%;
 	top: 0;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content:space-between;
 	align-items: center;
 	z-index: 1;
 	overflow-x: hidden;
@@ -125,10 +123,14 @@ p {
 	left: 0%;
 }
 #header .nav-list ul a {
-	font-size: 30px;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+
 	letter-spacing: 0.2rem;
 	text-decoration: none;
-	color: #B7B7B7;
+	color: #ffffff;
 	padding: 30px;
 	display: block;
 }
@@ -149,13 +151,15 @@ p {
 	letter-spacing: initial;
 }
 #header .nav-list ul li:hover a {
-	color: #FE6421;
+	color: #ffe1e1;
 }
+
+
 #header .hamburger {
 	height: 60px;
 	width: 60px;
 	display: inline-block;
-	border: 3px solid #565656;
+	border: 3px solid #ffffff;
 	border-radius: 50%;
 	position: relative;
 	display: flex;
@@ -164,7 +168,7 @@ p {
 	z-index: 100;
 	cursor: pointer;
 	transform: scale(0.8);
-	margin-right: 20px;
+	margin-right: 60px;
 }
 #header .hamburger:after {
 	position: absolute;
@@ -172,14 +176,14 @@ p {
 	height: 100%;
 	width: 100%;
 	border-radius: 50%;
-	border: 3px solid #565656;
+	border: 3px solid #ffffff;
 	animation: hamburger_puls 1s ease infinite;
 }
 #header .hamburger .bar {
 	height: 2px;
 	width: 30px;
 	position: relative;
-	background-color:#565656;
+	background-color:#ffffff;
 	z-index: -1;
 }
 #header .hamburger .bar::after,
@@ -189,7 +193,7 @@ p {
 	height: 100%;
 	width: 100%;
 	left: 0;
-	background-color: #565656;
+	background-color: #ffffff;
 	transition: 0.3s ease;
 	transition-property: top, bottom;
 }
@@ -209,13 +213,47 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image:url(./img/아이폰\ 목업.png), url(./img/배경\ 타원.png),url(./img/배경\ 그라데이션.png);
-	background-size: contain,contain,cover;
+	width: 100%;
+	background-image:url(/img/bbb\ 1.png);
+	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: 706px center,right 70px,top center;
+	background-position: top center;
 	position: relative;
 	z-index: 1;
 }
+/* body {
+
+	position: relative;
+	z-index: 1;
+} */
+/* #hero {
+	background-image:url(/img/아이폰목업1.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}  */
+
+
+@keyframes floatBubble{
+	0% {
+		   top:0;
+		   -webkit-animation-timing-function: ease-in;
+   
+	  }
+   
+	  100% {
+		 top: 500px;
+		 animation-timing-function: ease-out;
+	  }
+   
+   }
+
+#hero {
+	overflow: hidden;
+}
+
 #hero::after {
 	content: '';
 	position: absolute;
@@ -227,26 +265,28 @@ p {
 }
 #hero .hero {
 	max-width: 1200px;
-	margin: 0 auto;
-	padding: 0 50px;
+	margin: 0 8em;
 	justify-content: flex-start;
 }
 
+
 #hero h1 {
+
 	display: block;
-	width: fit-content;
-	font-size: 4rem;
+	font-size: 7em;
 	position: relative;
-	color: #565656;
+	color: #ffffff;
 	/* animation: text_reveal 0.5s ease forwards;
 	animation-delay: 1s; */
 }
 #hero h2 {
-	display: block;
-	width: fit-content;
-	font-size: 3rem;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 56px;
+	
 	position: relative;
-	color: #B2B2B2;
+	color: #ffffff;
 	/* animation: text_reveal 0.5s ease forwards;
 	animation-delay: 1s;  */
 }
@@ -260,6 +300,71 @@ p {
 	animation: text_reveal_name 0.5s ease forwards;
 	animation-delay: 3s;
 }
+#hero .iphone {
+	display: flex;
+}
+
+#hero .iphone1 {
+	
+	position: relative;
+	width: 450px;
+	height: 90%;
+	top: 5em;
+	-webkit-animation:myfirst 3s ; /* Chrome, Safari, Opera */
+    animation:myfirst 3s;
+}
+#hero .iphone_2{
+}
+#hero .iphone2 {
+	position: relative;
+	width: 450px;
+	height: 100%;
+	bottom: -5px;
+	left: -80px;
+	-webkit-animation:mysecond 3s ; /* Chrome, Safari, Opera */
+    animation:mysecond 3s;    
+	object-fit: cover;
+}
+#hero .iphone3 {
+	position: relative;
+	width: 450px;
+	height: 100%;
+	left: -80px;
+	top: 0px;
+	-webkit-animation:mysthird 3s ; /* Chrome, Safari, Opera */
+    animation:mythird 3s;
+}
+
+    /* Chrome, Safari, Opera */
+    @-webkit-keyframes myfirst
+    {
+    0%   { left:0px; top:300px;}
+
+    100% {left:0px; top:5em;}
+    }
+    
+	@-webkit-keyframes mysecond
+	{
+		0%   { left:-80px; bottom: -300px;}
+	
+		100% {left:-80px; bottom: -5px;}
+	}
+		
+	
+	@-webkit-keyframes mythird
+    {
+		0%   { left:-80px; top: -300px;}
+	
+		100% {left:-80px; top: 0px;}
+		}       
+    /* Standard syntax
+    @keyframes myfirst
+    {
+    0%   { left:0px; top:0px;transform:rotate(0deg)}
+    50%  {left:100%; margin-left:-100px;transform:rotate(360deg)}
+    100% {left:0px; top:0px;transform:rotate(0deg)}
+    } */
+
 
 .lineUp {
 	animation: 2s anim-lineUp ease-out ;
@@ -301,4 +406,3 @@ p {
 	animation-delay: 2.5s;
 }
 
-/* End Hero Section */
