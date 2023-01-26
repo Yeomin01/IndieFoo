@@ -48,7 +48,7 @@ p {
 	text-align: center;
 }
 .section-title span {
-	color: #FE6421;
+	color: #000000;
 }
 
 
@@ -121,7 +121,11 @@ p {
 }
 #header .nav-list ul.active {
 	left: 0%;
+	background-color: #d85f2be5;
+	padding-top: 5px;
+	padding-bottom: 20px;
 }
+
 #header .nav-list ul a {
 	font-style: normal;
 	font-weight: 500;
@@ -140,19 +144,181 @@ p {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
-	color: rgba(240, 248, 255, 0.021);
+	color: rgba(#d3480c,0.02);
 	font-size: 18px;
 	letter-spacing: 50px;
 	z-index: -1;
 	transition: 0.3s ease letter-spacing;
 }
 #header .nav-list ul li:hover a::after {
-	transform: translate(-50%, -50%) scale(1);
+	/* transform: translate(-50%, -50%) scale(1); */
 	letter-spacing: initial;
 }
 #header .nav-list ul li:hover a {
-	color: #ffe1e1;
+	color: #1a0800;
+	/* animation: ; */
 }
+
+/*switch button*/
+
+.switch-button-lan {
+	background: rgba(255, 255, 255, 0.56);
+	border-radius: 30px;
+	width: 200px;
+	height: 45px;
+	top: 0px;
+	text-align: center;
+	font-size: 15px;
+	letter-spacing: 2px;
+	color: #ffffff;
+	padding-right: 90px;
+	position: relative;
+}
+
+	.switch-button-lan:before {
+	  content: "English";
+	color: #828282;
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  right: 0;
+	  width:105px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  z-index: 9;
+	  pointer-events: none;
+	}
+
+
+	.switch-button-checkbox {
+	  cursor: pointer;
+	  position: absolute;
+	  background-color: #FE6421;
+	  top: 10;
+	  left: 0;
+	  bottom: 0;
+	  width: 100%;
+	  height: 100%;
+	  opacity: 0;
+	  z-index: 2;
+	}
+
+	.switch-button-checkbox:checked + .switch-button-label:before{
+		transform: translateX(90px);
+		transition: transform 300ms linear;
+	}
+  
+	.switch-button-checkbox + .switch-button-label {
+		position: relative;
+		padding: 15px 0px;
+		display: block;
+		user-select: none;
+		pointer-events: none;
+	}
+	.switch-button-label:before {
+		  content: "";
+		  background: #FE6421;
+		  height: 78%;
+		  width: 100px;
+		  position: absolute;
+		  right: 4px;
+		  top: 4px;
+		  
+		  border-radius: 30px;
+		  transform: translateX(0);
+		  transition: transform 300ms;
+		  z-index: 0;
+	}
+  
+	.switch-button-label-span {
+		  position: relative;
+	}
+
+    
+
+/* The switch - the box around the slider */
+/* .switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  /* The slider */
+
+ .switch-button {
+	bottom: 13px;
+	position: relative;
+	margin-left: 130px;
+	margin-right: 20px;
+	width: 160px;
+	height: 44px;
+ }
+
+ .switch {
+	width: 100%;
+	height: 100%;
+ }
+
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(240, 248, 255, 0.5);
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 38px;
+	width: 75px;
+	left: 5px;
+	bottom: 2px;
+	background-color: #FE6421;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  input:checked + .slider {
+	background-color: rgba(240, 248, 255, 0.5);
+}
+  
+  input:focus + .slider {
+	box-shadow: 0 0 1px #B7B7B7;
+  }
+  
+  input:checked + .slider:before {
+	-webkit-transform: translateX(75px);
+	-ms-transform: translateX(75px);
+	transform: translateX(75px);
+  }
+
+   */
+
+
+  
+  /* Rounded sliders */
+  .slider.round {
+	border-radius: 34px;
+  }
+  
+  .slider.round:before {
+	border-radius: 34px;
+  }
+
 
 
 #header .hamburger {
@@ -221,20 +387,6 @@ p {
 	position: relative;
 	z-index: 1;
 }
-/* body {
-
-	position: relative;
-	z-index: 1;
-} */
-/* #hero {
-	background-image:url(/img/아이폰목업1.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: top center;
-	position: relative;
-	z-index: 1;
-}  */
-
 
 @keyframes floatBubble{
 	0% {
@@ -405,4 +557,35 @@ p {
 #hero .main_con:nth-child(3) span {
 	animation-delay: 2.5s;
 }
+
+/* End Hero Section */
+
+/* Services Section */
+
+#services {
+	width: 100%;
+	background-image:url(/img/그라\ 1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+}
+
+#services .sm-iphone1 {
+
+	position: absolute;
+	width: 1000px;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+
+	/* position: relative;
+	width: 450px;
+	height: 90%;
+	top: 5em;
+	-webkit-animation:myfirst 3s ; 
+    animation:myfirst 3s; */
+}
+
 
