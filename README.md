@@ -1,1 +1,1 @@
-# IndiFoo
+# IndieFoo
