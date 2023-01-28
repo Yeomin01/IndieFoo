@@ -24,3 +24,34 @@ menu_item.forEach((item) => {
 	});
 });
 
+/* sm image slider start */
+'use strict'
+
+let imgWrapper = document.querySelectorAll('.img-wrapper'),
+    i = 0
+
+function showSlide() {
+  if(i >= imgWrapper.length) {
+    i = 0
+    for(let i = 0; i < imgWrapper.length; i++) {
+      imgWrapper[i].style.left = '100%'
+      imgWrapper[i].style.transition = '0s'
+    }
+  }
+
+  setTimeout(function() {
+     for(let i = 0; i < imgWrapper.length; i++) {
+      imgWrapper[i].style.transition = '2s'
+    }
+      imgWrapper[i - 1].style.left = '0' 
+  }, 1)
+  setTimeout(function() {
+      imgWrapper[i - 1].style.left = '-100%'
+  }, 4000)
+  setTimeout(showSlide, 4000)
+  i++
+}
+showSlide()
+
+
+/* sm image slider end */

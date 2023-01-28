@@ -428,8 +428,8 @@ p {
 	font-size: 7em;
 	position: relative;
 	color: #ffffff;
-	/* animation: text_reveal 0.5s ease forwards;
-	animation-delay: 1s; */
+	animation: text_reveal 0.5s ease forwards;
+	/* animation-delay: 1s; */
 }
 #hero h2 {
 	font-style: normal;
@@ -443,14 +443,14 @@ p {
 	animation-delay: 1s;  */
 }
 #hero .main_con:nth-child(1) {
-	animation-delay: 1s;
+	/* animation-delay: 1s; */
 }
 #hero .main_con:nth-child(2) {
-	animation-delay: 2s;
+	/* animation-delay: 2s; */
 }
 #hero .main_con:nth-child(3) {
-	animation: text_reveal_name 0.5s ease forwards;
-	animation-delay: 3s;
+	/* animation: text_reveal_name 0.5s ease forwards; */
+	/* animation-delay: 3s; */
 }
 #hero .iphone {
 	display: flex;
@@ -560,25 +560,29 @@ p {
 
 /* End Hero Section */
 
-/* Services Section */
+/* Sm Section */
 
-#services {
+#sm-container {
 	width: 100%;
-	background-image:url(/img/그라\ 1.png);
+	/* background-image:url(/img/그라\ 1.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: top center;
+	background-position: top center; */
 	position: relative;
 	z-index: 1;
 }
 
-#services .sm-iphone1 {
+#sm-container .slider-container{
+	height: 1000px;
+}
 
+#sm-container .img-wrapper {
 	position: absolute;
-	width: 1000px;
-	height: 100%;
-	left: 0px;
-	top: 0px;
+	width:1000px;
+	overflow: hidden;
+	height: 90%;
+	margin-left: 80px;
+	top: 10%;
 
 	/* position: relative;
 	width: 450px;
@@ -586,6 +590,10 @@ p {
 	top: 5em;
 	-webkit-animation:myfirst 3s ; 
     animation:myfirst 3s; */
+}
+
+#sm-container .img-wrapper img {
+	height: 100%;
 }
 
 
