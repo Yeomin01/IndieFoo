@@ -1,5 +1,6 @@
 const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+const menu_color = document.querySelector('.header .nav-bar .nav-list ul a');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
 const header = document.querySelector('.header.container');
 
@@ -11,7 +12,7 @@ hamburger.addEventListener('click', () => {
 document.addEventListener('scroll', () => {
 	var scroll_position = window.scrollY;
 	if (scroll_position > 250) {
-		header.style.backgroundColor = '#fffff';
+		menu_colorl.classList.add('active');
 	} else {
 		header.style.backgroundColor = 'transparent';
 	}
@@ -25,33 +26,24 @@ menu_item.forEach((item) => {
 });
 
 /* sm image slider start */
-'use strict'
+let imageAnim = document.getElementById("image-animate");
 
-let imgWrapper = document.querySelectorAll('.img-wrapper'),
-    i = 0
+let imageArray = [
+  "https://cdn.pixabay.com/photo/2022/09/04/20/11/plane-7432680_960_720.jpg",
+  "https://cdn.pixabay.com/photo/2017/11/04/13/43/texture-2917553_960_720.jpg",
+  "https://cdn.pixabay.com/photo/2022/07/20/18/44/reading-7334749_960_720.png"
+]
 
-function showSlide() {
-  if(i >= imgWrapper.length) {
-    i = 0
-    for(let i = 0; i < imgWrapper.length; i++) {
-      imgWrapper[i].style.left = '100%'
-      imgWrapper[i].style.transition = '0s'
-    }
+let imageIndex = 0;
+
+const startImage = () =>{
+  imageAnim.setAttribute("src",imageArray[imageIndex]);
+  imageIndex++;
+  if(imageIndex >= imageArray.length){
+    imageIndex = 0;
   }
-
-  setTimeout(function() {
-     for(let i = 0; i < imgWrapper.length; i++) {
-      imgWrapper[i].style.transition = '2s'
-    }
-      imgWrapper[i - 1].style.left = '0' 
-  }, 1)
-  setTimeout(function() {
-      imgWrapper[i - 1].style.left = '-100%'
-  }, 4000)
-  setTimeout(showSlide, 4000)
-  i++
 }
-showSlide()
 
+setInterval(startImage,1000);
 
 /* sm image slider end */
