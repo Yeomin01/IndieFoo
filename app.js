@@ -12,7 +12,7 @@ hamburger.addEventListener('click', () => {
 document.addEventListener('scroll', () => {
 	var scroll_position = window.scrollY;
 	if (scroll_position > 250) {
-		menu_colorl.classList.add('active');
+		// header.style.backgroundColor = ' rgba(0,0,0, 0.3)';
 	} else {
 		header.style.backgroundColor = 'transparent';
 	}
