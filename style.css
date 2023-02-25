@@ -1359,6 +1359,8 @@ p {
 	color: #565656;
 }
 #review .review-title span{	
+	position: relative;
+
 	font-weight: 700;
 	font-size: 60px;
 	line-height: 70px;
@@ -1625,31 +1627,110 @@ p {
 @media only screen and (max-width: 1200px) {
 	
 
+	.carousel-container {
+		position: relative;
+		overflow: hidden;
+		 width: 700px;
+		 height: 100%;
+		 overflow: hidden;
+		 bottom: 0px;
+		 margin: 0;
+		 /* padding: 10px 10px; */
+	   }
+	   
+	   .carousel {
+		 display: flex;
+		 overflow: hidden;
+		 width: 300%;
+		 height: 1000px;
+		 animation: sliding 13s infinite;
+	   }
+	   
+	   .carousel div {
+		   position: relative;
+		   overflow: hidden;
+		   width:1000px;
+		   height: 80%;
+		   margin-top:0px;
+		   background-size: 1000px 100%;
+		   background-position: bottom left;
+	   }
+
+	#contents .contents-title {
+		font-size: 4em;
+	}
+	#contents .contents-title span {
+		font-size: 1em;
+	}
+
+	#review .review-title {
+		font-size: 5em;
+	}
+	#review .review-title span{
+		font-size: 1em;
+	}
+	#review .review-script-first{
+		font-size: 2em;
+	}
+
+	#review .review-script-second{
+		top: 550px;
+		font-size: 1.5em;
+	}
+	#review .review-script-second span{
+		font-size: 1.2em;
+	}
+	#review .review_im3 {
+		width: 40em;;
+	}
+
+
 	#review .review_im1 {
-		visibility: hidden;
+		width: 40em;
+		height: 20em;
+		left: 40px;
+		top: -90px;
 	}
 	#review .review_im2 {
-		visibility: hidden;
+		width: 40em;
+		height: 20em;
+		left: 40px;
+		top: 150px;
 	}
 
 	#sm .sm-title{
-		visibility: hidden;
+		font-size: 0.8em;	
 	}
 	#sm .dot{
 		visibility: hidden;
 	}
-	#sm .sm-bar{
-		visibility: hidden;
+	#sm .sm-bar img{
+		width: 50em;
+
 	}
 	#sm .sm-bigTitle{
-		visibility: hidden;
+		font-size: 6em;
 	}
 	#sm .sm-script{
+		padding-top: 50px; 
+	}
+
+	#contents .contents-script{
+		visibility: hidden;
+	}
+	#contents .contents_im3 {
+		visibility: hidden;
+	}
+	#contents .contents_im4 {
 		visibility: hidden;
 	}
 }
 
 @media only screen and (max-width:800px) {
+	.carousel-container {
+		visibility: hidden;
+	}
+
 	#contact .contact {
 		flex-direction: column;
 		padding: 100px 0;
@@ -1681,6 +1762,12 @@ p {
 		width: 100%;
 		text-align: left;
 		padding-left: 20px;
+	}
+	#review .review_im1 {
+		visibility: hidden;
+	}
+	#review .review_im2 {
+		visibility: hidden;
 	}
 }
 
