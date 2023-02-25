@@ -134,6 +134,8 @@ p {
 	letter-spacing: 0.2rem;
 	text-decoration: none;
 	color: #ffffff;
+	text-shadow: 2px 2px 4px gray; 
+
 	padding: 30px;
 	display: block;
 }
@@ -387,7 +389,7 @@ p {
 /* main Section */
 #main {
 	width: 100%;
-	background-image:url(/img/bbb\ 1.png);
+	background-image:url("https://i.ibb.co/TRH3FTs/bbb-1.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
@@ -496,24 +498,24 @@ p {
     /* Chrome, Safari, Opera */
     @-webkit-keyframes myfirst
     {
-    0%   { left:0px; top:300px;}
+    0%   { left:0px; top:300px; opacity: 0;}
 
-    100% {left:0px; top:5em;}
+    100% {left:0px; top:5em; opacity: 1;}
     }
     
 	@-webkit-keyframes mysecond
 	{
-		0%   { left:-80px; bottom: -300px;}
+		0%   { left:-80px; bottom: -300px; opacity: 0;}
 	
-		100% {left:-80px; bottom: -5px;}
+		100% {left:-80px; bottom: -5px; opacity: 1;}
 	}
 		
 	
 	@-webkit-keyframes mythird
     {
-		0%   { left:-80px; top: -300px;}
+		0%   { left:-80px; top: -300px; opacity: 0;}
 	
-		100% {left:-80px; top: 0px;}
+		100% {left:-80px; top: 0px;opacity: 1;}
 		}       
     /* Standard syntax
     @keyframes myfirst
@@ -588,8 +590,8 @@ p {
 	display: flex;
 	height: 100%;
 	width: 100%;
-	max-height: 1000px;
-	background-image:url(/img/그라\ 1.png);
+	max-height: 800px;
+	background-image:url("https://i.ibb.co/x5VVDFp/1.png");
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: left bottom;
@@ -600,26 +602,27 @@ p {
 
 .carousel-container {
  position: relative;
-  width: 620px;
-  height: 900px;
+  width: 700px;
+  height: 100%;
   overflow: hidden;
-  bottom:0;
+  bottom: 0px;
   margin: 0;
   /* padding: 10px 10px; */
 }
 
 .carousel {
   display: flex;
-  width: 3000px;
+  width: 300%;
   height: 1000px;
-  margin-left: -50px;
+  bottom: 0;
+  margin-left: 0px;
   animation: sliding 13s infinite;
 }
 
 .carousel div {
 	position: relative;
     width:720px;
-	height: 90%;
+	height: 80%;
 	margin-top:0px;
     background-size:1150px 100%;
 	background-position: bottom left;
@@ -628,24 +631,24 @@ p {
     animation-play-state: paused;
 }
   .image-one {
-    background-image: url(./img/스무고개화면1.png);
+    background-image: url("https://i.ibb.co/09njBFX/1.png");
   }
   .image-two {
-    background-image: url(./img/2.png);
+    background-image: url("https://i.ibb.co/c8zD3gV/2.png");
   }
   .image-three {
-    background-image: url(./img/3.png);
+    background-image: url("https://i.ibb.co/XxZjTQM/3.png");
   }
 .sm-title .sm-title-1{
 	position: absolute;
-	width: 780px;
+	width: 760px;
 	height: 164px;
-	left: 650px;
+	right: 130px;
 	top: 180px;
 
 	font-style: normal;
 	font-weight: 500;
-	font-size: 5em;
+	font-size: 4em;
 	line-height: 82px;
 	text-align: right;
 	color: #FE6421;
@@ -654,14 +657,15 @@ p {
 
 .sm-title .sm-title-2{
 	position: absolute;
-	width: 1000px;
-	height: 164px;
-	left: 430px;
-	top: 250px;
+	width: 980px;
+	height: 130px;
+	right: 130px;
+	top: 240px;
 	
 	font-style: normal;
+	text-align: right;
 	font-weight: 500;
-	font-size: 5em;
+	font-size: 4em;
 	line-height: 82px;
 	text-align: right;
 	color: #565656;
@@ -669,18 +673,18 @@ p {
 .dot {
 	z-index: 1;
 	position: absolute;
-	width: 36px;
-	height: 34px;
-	left: 1075px;
+	width: 25px;
+	height: 25px;
+	right: 385px;
 	top: 235px;
 }
 
 .sm-bar img{
 	position: absolute;
 	height: 8px;
-	width: 750px;
-	left: 690px;
-	top: 330px;
+	width: 650px;
+	top: 315px;
+	right: 130px;
 	border-radius: 0px;
 }
 
@@ -688,13 +692,14 @@ p {
 .sm-bigTitle {
 	position: absolute;
 	height: 140px;
-	width: 800px;
-	left: 830px;
-	top: 340px;
+	width: 570px;
+	right: 130px;
+	top: 320px;
 
 	font-style: normal;
+	text-align: right;
 	font-weight: 700;
-	font-size: 9em;
+	font-size: 8em;
 	line-height: 140px;
 	/* identical to box height */
 	
@@ -709,13 +714,13 @@ p {
 .sm-script{
 	position: absolute;
 	width: 1166px;
-	height: 274px;
-	left: 270px;
-	bottom: -20px;
+	height: 250px;
+	right: 130px;
+	bottom: 100px;
 	
 	font-weight: 400;
-	font-size: 25px;
-	line-height: 43px;
+	font-size: 21px;
+	line-height: 40px;
 	text-align: right;
 	
 	color: #828282;
@@ -900,7 +905,7 @@ p {
 	width: 100%;
 	height: 900px;
 	max-height: 900px;
-	background-image:url(/img/bbb\ 4.png);
+	background-image:url("https://i.ibb.co/hfLzzsR/bbb-4.png");
 	background-size: cover;
 	padding-right: 100px;
 	background-repeat: no-repeat;
@@ -1118,13 +1123,14 @@ p {
 	width: 100%;
 	height: 900px;
 	max-height: 900px;
-	background-image:url(/img/jjj\ 1.png);
+	background-image:url("https://i.ibb.co/Z2DsS0T/jjj-1.png");
 	background-size: 1090px 785px;
 	background-position: bottom left;
 	background-repeat: no-repeat;
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+	
 }
 
 
@@ -1142,8 +1148,8 @@ p {
 	position: absolute;
 	width: 700px;
 	height: 198px;
-	left: 70px;
-	top: 120px;
+	left: 100px;
+	top: 110px;
 	
 	font-weight: 700;
 	font-size: 50px;
@@ -1156,39 +1162,43 @@ p {
 	line-height: 70px;
 	color: #FE6421;
 }
-
+#contents .contents-imgs-phone{
+	position:absolute;
+	left: 0px;
+	bottom: 0px;
+}
 #contents .contents_im1 {
-	position: absolute;
+	position: relative;
 	width: 770px;
 	height: 500px;
 	left: 20px;
 	bottom: 0px;
-	-webkit-animation:myfirst-k 2s ; 
-	/* Chrome, Safari, Opera */    
-	animation:myfirst-k 2s;
+	/* -webkit-animation:myfirst-k 2s ; 
+	animation:myfirst-k 2s; */
+	
 }
+
 #contents .contents_im2 {
 	position: absolute;
 	width: 780px;
 	height: 600px;
 	left: 400px;
 	bottom: 0px;
-	-webkit-animation:mysecond-k 2s ; 
-	/* Chrome, Safari, Opera */    
-	animation:mysecond-k 2s;
+	/* -webkit-animation:mysecond-k 2s ; 
+	animation:mysecond-k 2s; */
 }
 
 @-webkit-keyframes myfirst-k
     {
-    0%   { left:170px; bottom:-150px;}
+    0%   { left:170px; bottom:-150px; opacity: 0;}
 
-    100% {left:20px; bottom:0px;}
+    100% {left:20px; bottom:0px; opacity: 1;}
 }
 @-webkit-keyframes mysecond-k
     {
-    0%   { left:550px; bottom:-150px;}
+    0%   { left:550px; bottom:-150px; opacity: 0;}
 
-    100% {left:400px; bottom:0px;}
+    100% {left:400px; bottom:0px; opacity: 1;}
 }
 
 #contents .contents_im3 {
@@ -1295,14 +1305,15 @@ p {
 	position: relative;
 	display: block;
 	width: 100%;
-	height: 900px;
+	height: 800px;
 	max-height: 900px;
-	background-image:url(/img/그라1.png);
+	background-image:url("https://i.ibb.co/G79CPXp/1.png");
 	background-size: 800px 500px;
 	background-position: 650px 200px;
 	background-repeat: no-repeat;
 	z-index: 1;
 	overflow: hidden;
+	
 }
 
 
@@ -1320,18 +1331,20 @@ p {
 	position: absolute;
 	width: 700px;
 	height: 198px;
-	left: 70px;
+	left: 90px;
 	top: 200px;
 	
 	font-weight: 700;
 	font-size: 60px;
-	line-height: 87px;
+	line-height: 77px;
+	letter-spacing: 0.2px;
 	color: #565656;
 }
 #review .review-title span{	
 	font-weight: 700;
 	font-size: 60px;
 	line-height: 70px;
+	letter-spacing: 0.2px;
 	color: #FE6421;
 }
 
@@ -1339,13 +1352,14 @@ p {
 	position: absolute;
 	width: 500px;
 	height: 93px;
-	left: 70px;
-	top: 420px;
+	left: 90px;
+	top: 400px;
 
 	font-style: normal;
 	font-weight: 500;
 	font-size: 30px;
 	line-height: 47px;
+	letter-spacing: 0.2px;
 	
 	color: #565656;
 }
@@ -1353,22 +1367,41 @@ p {
 	position: absolute;
 	width: 800px;
 	height: 93px;
-	left: 70px;
+	left: 90px;
 	top: 580px;
 
 	font-style: normal;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 22px;
+	letter-spacing: 0.2px;
 	line-height: 41px;
 	
 	color: #565656;
 }
 
+#review .review-script-second {
+	position: absolute;
+	width: 800px;
+	height: 93px;
+	left: 90px;
+	top: 580px;
+
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	letter-spacing: 0.2px;
+	line-height: 35px;
+	
+	color: #565656;
+}
+
+
 #review .review-script-second span{	
 	font-style: normal;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 22px;
 	line-height: 10px;
+	letter-spacing: 0.2px;
 	
 	background-color: #FE6421;
 	color: #ffffff;
@@ -1378,90 +1411,144 @@ p {
 	position: absolute;
 	width: 530px;
 	height: 280px;
-	left: 650px;
-	top: 190px;	
+	left: -50px;
+	top: -170px;	
+	/* animation:myani-review 2s; */
+	
 }
 #review .review_im2 {
 	position: absolute;
 	width: 530px;
 	height: 280px;
-	left: 920px;
-	top: 450px;	
-	
+	left: 150px;
+	top: 100px;	
+	/* animation:myani-review 2s; */
+}
+
+@-webkit-keyframes myani-review
+    {
+    0%   { opacity: 0;}
+
+    100% { opacity: 1;}
 }
 
 #review .review_im3 {
 	position: absolute;
 	width: 500px;
 	height: 10px;
-	left: 70px;
-	top: 390px;
+	left: 90px;
+	top: 380px;
 }
 /*End Review Section*/
 
 /* contact Section */
-#contact .contact {
-	flex-direction: column;
-	max-width: 1200px;
-	margin: 0 auto;
-	width: 90%;
-}
-#contact .contact-items {
-	/* max-width: 400px; */
+
+#contact{
+	position: relative;
+	display: block;
 	width: 100%;
+	height: 700px;
+	z-index: 1;
+	overflow: hidden;
+	background-color: #ffffff;
 }
-#contact .contact-item {
-	width: 80%;
-	padding: 20px;
+
+#contact::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+#contact .contact-logo {
+	position: relative;
+	display: block;
+	top: -150px;
+}
+#contact .contact-script {
+	position: relative;
+	top: -250px;
+	display: block;
+	font-style: normal;
+	font-weight: 100;
+	font-size: 25px;
+	line-height: 43px;
 	text-align: center;
-	border-radius: 10px;
-	padding: 30px;
-	margin: 30px;
-	display: flex;
+	color: #000000;
+}
+
+#contact .contact-script span {
+	color: #FE6421;
+}
+
+#contact .contact-email {
+	position: relative;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;
-	box-shadow: 0px 0px 18px 0 #0000002c;
-	transition: 0.3s ease box-shadow;
+	margin-left: 0px;
+	top:-200px;
 }
-#contact .contact-item:hover {
-	box-shadow: 0px 0px 5px 0 #0000002c;
-}
-#contact .icon {
-	width: 70px;
-	margin: 0 auto;
-	margin-bottom: 10px;
-}
-#contact .contact-info h1 {
-	font-size: 2.5rem;
-	font-weight: 500;
-	margin-bottom: 5px;
-}
-#contact .contact-info h2 {
-	font-size: 1.3rem;
-	line-height: 2rem;
-	font-weight: 500;
+#contact .agree {
+	color: #B7B7B7;
+	justify-content: center;
+	align-items: center;
 }
 /*End contact Section */
 
 /* Footer */
 #footer {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-color: #FE6421;
 }
 #footer .footer {
-	min-height: 200px;
+	min-height: 250px;
+	padding-top: 30px;
+	padding-bottom: 50px;
 	flex-direction: column;
-	padding-top: 50px;
-	padding-bottom: 10px;
+	align-items: flex-start;
+	justify-content: space-between;
+	padding-left: 80px;
 }
-#footer h2 {
-	color: white;
-	font-weight: 500;
-	font-size: 1.8rem;
-	letter-spacing: 0.1rem;
-	margin-top: 10px;
-	margin-bottom: 10px;
+#footer .brand {
+	left: 0;			
+	position: relative;
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 64px;
+	text-align: left;
+	color: #FFFFFF;
 }
+
+#footer .footer-script1 {
+	left: 0;			
+	position: relative;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 24px;
+	padding-top: 20px;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+}
+#footer .footer-script2 {
+	display: flex;
+	align-items: center;
+	justify-content:space-between;
+	width: 17%;
+	
+}
+
+#footer .footer-script2 a{
+	left: 0;			
+	position: relative;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 24px;
+	padding-top: 20px;
+	color: #FFFFFF;
+}
+
+/* 
 #footer .social-icon {
 	display: flex;
 	margin-bottom: 30px;
@@ -1477,7 +1564,7 @@ p {
 }
 #footer .social-item:hover img {
 	filter: grayscale(0);
-}
+} */
 #footer p {
 	color: white;
 	font-size: 1.3rem;
@@ -1517,6 +1604,32 @@ p {
 	}
 }
 /* End Keyframes */
+@media only screen and (max-width: 1200px) {
+	
+
+	#review .review_im1 {
+		visibility: hidden;
+	}
+	#review .review_im2 {
+		visibility: hidden;
+	}
+
+	#sm .sm-title{
+		visibility: hidden;
+	}
+	#sm .dot{
+		visibility: hidden;
+	}
+	#sm .sm-bar{
+		visibility: hidden;
+	}
+	#sm .sm-bigTitle{
+		visibility: hidden;
+	}
+	#sm .sm-script{
+		visibility: hidden;
+	}
+}
 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
@@ -1540,6 +1653,7 @@ p {
 		margin: 2.5%;
 	}
 	/* End Services Section */
+
 
 	/* Project */
 	#projects .project-item {
@@ -1680,5 +1794,6 @@ p {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
+		
 }
 /* End  Media Query For Desktop */
