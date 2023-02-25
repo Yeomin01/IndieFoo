@@ -68,9 +68,26 @@ p {
 	background-color: #d75a25;
 	color: #ffffff;
 }
+.brand {
+	position: relative;
+	padding-left: 30px;
+}
+.brand span {
+	position: absolute;
+	font-weight: 500;
+	left: 80px;
+	top: 10px;
+	font-size: 22px;
+
+	letter-spacing: 0.1rem;
+	text-decoration: none;
+	color: #ffffff;
+	text-shadow: 2px 2px 4px gray; 
+}
 .brand img {
 	position: static;
-	padding: 30px 20px;
+	width: 40px;
+	padding: 0px 0px;
 }
 
 .explore_btn {
@@ -115,6 +132,7 @@ p {
 	flex-direction: column;
 	justify-content:space-between;
 	align-items: center;
+	
 	z-index: 1;
 	overflow-x: hidden;
 	transition: 0.5s ease left;
