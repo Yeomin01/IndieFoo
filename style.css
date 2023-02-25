@@ -1626,6 +1626,24 @@ p {
 /* End Keyframes */
 @media only screen and (max-width: 1200px) {
 	
+	#sm .sm-title{
+		font-size: 0.8em;	
+	}
+	#sm .dot{
+		visibility: hidden;
+	}
+	#sm .sm-bigTitle{
+		font-size: 5.5em;
+	}
+	#sm .sm-script{
+		padding-top: 50px; 
+		font-size: 1.6em;
+	}
+
+	#sm .sm-bar img{
+		width: 40em;
+		height: 0.5em;
+	}
 
 	.carousel-container {
 		position: relative;
@@ -1686,34 +1704,18 @@ p {
 
 
 	#review .review_im1 {
-		width: 40em;
-		height: 20em;
+		width: 45em;
+		height: 23em;
 		left: 40px;
-		top: -90px;
+		top: -150px;
 	}
 	#review .review_im2 {
-		width: 40em;
-		height: 20em;
+		width: 45em;
+		height: 23em;
 		left: 40px;
-		top: 150px;
+		top: 100px;
 	}
 
-	#sm .sm-title{
-		font-size: 0.8em;	
-	}
-	#sm .dot{
-		visibility: hidden;
-	}
-	#sm .sm-bar img{
-		width: 50em;
-
-	}
-	#sm .sm-bigTitle{
-		font-size: 6em;
-	}
-	#sm .sm-script{
-		padding-top: 50px; 
-	}
 
 	#contents .contents-script{
 		visibility: hidden;
