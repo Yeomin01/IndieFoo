@@ -2218,7 +2218,7 @@ p {
 		display: flex;
 		top: -100px;
 		left: -300px;
-		font-size: 0.6em;
+		font-size: 0.5em;
 	}
 	#sm .sm-bar {
 		position: relative;
@@ -2249,7 +2249,7 @@ p {
 	}
 	#sm .sm-script{
 		visibility: hidden;
-	/* }
+	 }/*
 	#sm .sm-bigTitle div{
 		position: relative;
 		display: flex;
@@ -2261,7 +2261,8 @@ p {
 	#sm .sm-script{
 		visibility: hidden;
 	} */
-	#sm .carousel {
+
+	#sm.carousel{
 		position: relative;	
 		justify-content: center;
 	}
@@ -2286,7 +2287,7 @@ p {
 		width: 360%;
 		height: 1000px;
 		bottom: 0;
-		margin-left: -100px;
+		margin-left: -60px;
 		animation: sliding 13s infinite;
 	}
    
@@ -2299,21 +2300,19 @@ p {
 
 	#map .map {
 		position: relative;
-		display: block;
-		flex-direction: column;
+		display: flex;
 	}
 	#map .map-imgs {
 		position: relative;
-		display: inline;
-		left: -500px;
+		left: -750px;
+		bottom: 280px;
 	}
 	#map .map-title {
 		position: relative;
 		display: flex;
-		top: 150px;
+		top: -150px;
 		justify-content: center;
-		left: -100px;
-		min-width: 500px;
+		left: 0px;
 		font-size: 4em;
 	}
 
