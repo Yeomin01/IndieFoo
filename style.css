@@ -1946,7 +1946,7 @@ p {
 		position: relative;
 		display: block;
 		visibility:visible;
-		width: 550px;
+		width: 450px;
 		height: 100%;
 		top: 240px;
 		left: 60px;
@@ -1955,7 +1955,7 @@ p {
 		position: relative;
 		display: block;
 		visibility:visible;
-		width: 550px;
+		width: 450px;
 		height: 100%;
 		left: 170px;
 		top: 240px;
@@ -2006,20 +2006,22 @@ p {
 	#sm .sm-title {
 		position: relative;
 		top: -100px;
-		min-width: 15px;
-		right: 150px;
 		font-size: 0.8em;
+		justify-content: center;
+		align-items: center;
 	}
 	#sm .sm-bar {
 		position: relative;
+		width: 100%;
 		top: -100px;
-		right: 150px;
+		justify-content: center;
+		align-items: center;
+
 	}
 	#sm .sm-bigTitle div{
 		position: relative;
 		font-size: 1.1em;
 		top: -100px;
-		right: 150px;
 	}
 	#sm .sm-script{
 		visibility: hidden;
@@ -2160,7 +2162,10 @@ p {
 		position: relative;
 		display: block;
 		visibility:visible;
-		top: 140px;
+		width: 450px;
+		height: 100%;
+		left: 60px;
+		top: 130px;
 
 	}
 	#review .review_im3{
@@ -2176,6 +2181,271 @@ p {
 
 	#footer .footer{
 		min-width: 500px;
+	}
+
+}
+
+
+/*Media Query For mobile*/
+@media screen and (max-width: 540px){
+
+	#main .main {
+		position: relative;
+		
+		left: -35px;
+	}
+	#sm {
+		max-height: 900px;
+	}
+
+	#sm .sm {
+		max-height: 900px;
+		position: relative;
+		display: block;
+	}
+
+	#sm .sm-container {
+		position: relative;
+		display: block;
+		width: 160%;
+		right: 0;
+		left: 0;
+		padding:0;
+		margin: 0;
+	}
+	#sm .sm-title {
+		position: relative;
+		display: flex;
+		top: -100px;
+		left: -300px;
+		font-size: 0.6em;
+	}
+	#sm .sm-bar {
+		position: relative;
+		width: 100%;
+		top: -100px;
+	}
+	
+	#sm .sm-title {
+		position: relative;
+		top: -100px;
+		font-size: 0.8em;
+		justify-content: center;
+		align-items: center;
+	}
+	#sm .sm-bar {
+		position: relative;
+		display: flex;
+		right: 300px;
+		top: -100px;
+		justify-content: center;
+	}
+	#sm .sm-bigTitle div{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		font-size: 1.1em;
+		top: -100px;
+	}
+	#sm .sm-script{
+		visibility: hidden;
+	/* }
+	#sm .sm-bigTitle div{
+		position: relative;
+		display: flex;
+		top: -100px;
+		font-size: 0.9em;
+		left: 0px;
+		right: 0px;
+	}
+	#sm .sm-script{
+		visibility: hidden;
+	} */
+	#sm .carousel {
+		position: relative;	
+		justify-content: center;
+	}
+
+	#sm .carousel-wrapper{
+		width: 2000px;
+		justify-content: center;
+
+	}
+	#sm .carousel-container {
+		position: relative;
+		width: 600px;
+		height: 100%;
+		top: 300px;
+		justify-content: center;
+		align-items: center;
+	 /* padding: 10px 10px; */
+    }
+	#sm .carousel {
+		display: flex;
+		justify-content: center;
+		width: 360%;
+		height: 1000px;
+		bottom: 0;
+		margin-left: -100px;
+		animation: sliding 13s infinite;
+	}
+   
+	.carousel div {
+		position: relative;
+		height:60%;
+		margin-top:0px;
+		background-size: 800px 100%;
+	}
+
+	#map .map {
+		position: relative;
+		display: block;
+		flex-direction: column;
+	}
+	#map .map-imgs {
+		position: relative;
+		display: inline;
+		left: -500px;
+	}
+	#map .map-title {
+		position: relative;
+		display: flex;
+		top: 150px;
+		justify-content: center;
+		left: -100px;
+		min-width: 500px;
+		font-size: 4em;
+	}
+
+	#contents .contents-title{
+		position: relative;
+		min-width: 550px;
+		top: -150px;
+		font-size: 3.1em;
+		left: 50px;
+	}
+
+	#contents .contents-im1 {
+		position: relative;
+		top: 370px;
+	}
+
+	#review .review-title{
+		position: relative;
+		min-width: 280px;
+		top: -50px;
+		font-size: 3.5em;
+	}
+
+
+	#contact .contact {
+		flex-direction: column;
+		display: flex;
+		padding: 100px 0;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+	#contact .contact-items {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0;
+	}
+	#contact .contact-item {
+		width: 30%;
+		margin: 0;
+		flex-direction: row;
+	}
+	#contact .contact-item .icon {
+		height: 100px;
+		width: 100px;
+	}
+	#contact .contact-item .icon img {
+		left: -50px;
+		object-fit: contain;
+	}
+	#contact .contact-logo {
+		left: -50px;
+	}
+
+	#contact .contact-script{
+		left: -50px;
+		font-size: 1.4em;
+	}
+	#contact .contact-item .contact-info {
+		width: 100%;
+		text-align: left;
+		padding-left: 20px;
+	}
+	#contact .contact-email{
+		left: -50px;
+
+	}
+	#contents .contents {
+		min-width: 500px;
+	}
+
+	#review {
+		min-height: 700px;
+	}
+	#review .review{
+		position: relative;
+		display: block;
+		flex-direction: column;	
+		width: 120%;
+		padding:0;
+		margin: 0;
+	}
+
+	#review .review-title {
+		position: relative;
+		top: 50px;
+		left: 40px;
+		font-size: 3em;
+		line-height: 0px;
+	}
+	#review .review_im1 {
+		position: relative;
+		display: block;
+		visibility:visible;
+		width: 340px;
+		top: 140px;
+		left: 20px;
+		
+	}
+	#review .review_im2 {
+		position: relative;
+		display: block;
+		visibility:visible;
+		width: 340px;
+		top: 130px;
+		left: 20px;
+
+	}
+	#review .review_im3{
+		visibility:hidden;
+	}
+	#review .review-script-second{
+		position: relative;
+		display: block;
+		font-size: 1.1em;
+		top: 70px;
+		margin-top: -50px;
+		left: 40px;
+		line-height: 24px;
+	}
+
+	#footer .footer{
+		min-width: 500px;
+		padding: 15px 10px;
+	}
+	#footer .brand {
+		font-size: 50px;
+	}
+	#footer .footer-script1{
+		font-size: 10px;
 	}
 
 } 
