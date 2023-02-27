@@ -2324,6 +2324,7 @@ p {
 	#contents .contents-title{
 		position: relative;
 		min-width: 550px;
+		top: -20px;
 		font-size: 3em;
 		left: 50px;
 	}
