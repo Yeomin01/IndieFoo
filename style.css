@@ -2453,13 +2453,16 @@ p {
 	#footer .footer-script1{
 		font-size: 10px;
 	}
-	#footer .footer-script2 {
-		flex-direction: column;
+	#footer .footer-script2{
 		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 30%;
 	}
 	#footer .footer-script2 a{
-		font-size: 5px;
+		font-size: 11px;
 	}
+
 
 } 
 
