@@ -608,7 +608,6 @@ p {
 	display: flex;
 	height: 100%;
 	width: 100%;
-	max-height: 800px;
 	background-image:url("https://i.ibb.co/x5VVDFp/1.png");
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -1623,9 +1622,13 @@ p {
 		font-weight: 500;
 	}
 }
-/* End Keyframes */
-@media only screen and (max-width: 1200px) {
-	
+
+@media only screen and (max-width: 1280px) {
+		
+	#sm {
+		max-height: 800px;
+	}
+
 	#sm .sm-title{
 		font-size: 0.8em;	
 	}
@@ -1674,6 +1677,10 @@ p {
 		   background-position: bottom left;
 	   }
 
+}
+/* End Keyframes */
+@media only screen and (max-width: 1200px) {
+
 	#contents .contents-title {
 		font-size: 4em;
 	}
@@ -1702,7 +1709,6 @@ p {
 		width: 40em;;
 	}
 
-
 	#review .review_im1 {
 		width: 45em;
 		height: 23em;
@@ -1716,7 +1722,6 @@ p {
 		top: 100px;
 	}
 
-
 	#contents .contents-script{
 		visibility: hidden;
 	}
@@ -1727,10 +1732,74 @@ p {
 		visibility: hidden;
 	}
 }
+@media only screen and (max-width:1080px) {
+		
+	#sm {
+		max-height: 800px;
+	}
 
-@media only screen and (max-width:800px) {
-	.carousel-container {
+	#sm .sm-title-1{
+		right: 50px;
+		font-size: 3.5em;	
+	}
+	#sm .sm-title-2{
+		right: 50px;
+		font-size: 3.5em;	
+	}
+
+	#sm .dot{
+		right: 50px;
 		visibility: hidden;
+	}
+	#sm .sm-bigTitle{
+		right: 50px;
+		font-size: 5em;
+	}
+	#sm .sm-script{
+		right: 50px;
+		padding-top: 50px; 
+		font-size: 1.5em;
+	}
+
+	#sm .sm-bar img{
+		right: 50px;
+		width: 35em;
+		height: 0.5em;
+	}
+
+	.carousel-container {
+		position: relative;
+		overflow: hidden;
+		 width: 700px;
+		 height: 100%;
+		 overflow: hidden;
+		 bottom: 0px;
+		 margin: 0;
+		 /* padding: 10px 10px; */
+	   }
+	   
+	   .carousel {
+		 display: flex;
+		 overflow: hidden;
+		 width: 300%;
+		 height: 1000px;
+		 animation: sliding 13s infinite;
+	   }
+	   
+	   .carousel div {
+		   position: relative;
+		   overflow: hidden;
+		   width:1000px;
+		   height: 80%;
+		   margin-top:0px;
+		   background-size: 1000px 100%;
+		   background-position: bottom left;
+	   }
+
+}
+@media only screen and (max-width:960px) {
+	.carousel-container {
+		/* visibility: hidden; */
 	}
 
 	#contact .contact {
@@ -1772,6 +1841,344 @@ p {
 		visibility: hidden;
 	}
 }
+@media screen and (max-width: 930px){
+	
+	#sm {
+		max-height: 1300px;
+		min-width: 500px;
+	}
+
+	#sm .sm {
+		max-height: 1300px;
+		position: relative;
+		display: block;
+		flex-direction: column;	
+	}
+
+	#sm .sm-container {
+		position: relative;
+		display: block;
+		width: 120%;
+		padding:0;
+		margin: 0;
+	}
+	#sm .sm-title {
+		position: relative;
+		top: -100px;
+		min-width: 15px;
+		right: 200px;
+		font-size: 1.1em;
+	}
+	#sm .sm-bar {
+		position: relative;
+		top: -100px;
+		right: 200px;
+	}
+	#sm .sm-bigTitle div{
+		position: relative;
+		font-size: 1.5em;
+		top: -100px;
+		right: 200px;
+	}
+	#sm .sm-script{
+		visibility: hidden;
+	}
+	#sm .carousel {
+		position: relative;		
+	}
+
+	#sm .carousel-wrapper{
+		width: 2000px;
+
+	}
+	#sm .carousel-container {
+		position: relative;
+		width: 600px;
+		height: 100%;
+		top: 300px;
+		justify-content: center;
+		align-items: center;
+	 /* padding: 10px 10px; */
+    }
+	#sm .carousel {
+		display: flex;
+		width: 360%;
+		height: 1000px;
+		bottom: 0;
+		margin-left: 0px;
+		animation: sliding 13s infinite;
+	}
+   
+	.carousel div {
+		position: relative;
+		height:80%;
+		margin-top:0px;
+		background-size: 1100px 100%;
+	}
+	#review .review-title{
+		position: relative;
+		min-width: 280px;
+		top: -50px;
+		font-size: 3.5em;
+	}
+
+	#review {
+		min-height: 1100px;
+	}
+	#review .review{
+		min-width: 500px;
+		position: relative;
+		display: block;
+		flex-direction: column;	
+		width: 120%;
+		padding:0;
+		margin: 0;
+	}
+
+	#review .review-title{
+		position: relative;
+		align-items: center;
+		justify-content: center;
+		font-size: 5em;
+		top: 50px;
+	}
+	#review .review_im1 {
+		position: relative;
+		display: block;
+		visibility:visible;
+		width: 550px;
+		height: 100%;
+		top: 240px;
+		left: 60px;
+	}
+	#review .review_im2 {
+		position: relative;
+		display: block;
+		visibility:visible;
+		width: 550px;
+		height: 100%;
+		left: 170px;
+		top: 240px;
+
+	}
+	#review .review_im3{
+		visibility:hidden;
+	}
+	#review .review-script-first{
+		visibility: hidden;
+	}
+	#review .review-script-second{
+		position: relative;
+		display: block;
+		font-size: 1.8em;
+		top: 100px;
+		margin-top: -50px;
+	}
+
+}
+
+/*Media Query For mobile*/
+@media screen and (max-width: 600px){
+
+	#main .main {
+		position: relative;
+		left: -35px;
+	}
+	#sm {
+		max-height: 900px;
+		min-width: 500px;
+	}
+
+	#sm .sm {
+		max-height: 900px;
+		position: relative;
+		display: block;
+		flex-direction: column;	
+	}
+
+	#sm .sm-container {
+		position: relative;
+		display: block;
+		width: 120%;
+		padding:0;
+		margin: 0;
+	}
+	#sm .sm-title {
+		position: relative;
+		top: -100px;
+		min-width: 15px;
+		right: 150px;
+		font-size: 0.8em;
+	}
+	#sm .sm-bar {
+		position: relative;
+		top: -100px;
+		right: 150px;
+	}
+	#sm .sm-bigTitle div{
+		position: relative;
+		font-size: 1.1em;
+		top: -100px;
+		right: 150px;
+	}
+	#sm .sm-script{
+		visibility: hidden;
+	}
+	#sm .carousel {
+		position: relative;		
+	}
+
+	#sm .carousel-wrapper{
+		width: 2000px;
+
+	}
+	#sm .carousel-container {
+		position: relative;
+		width: 600px;
+		height: 100%;
+		top: 300px;
+		justify-content: center;
+		align-items: center;
+	 /* padding: 10px 10px; */
+    }
+	#sm .carousel {
+		display: flex;
+		width: 360%;
+		height: 1000px;
+		bottom: 0;
+		margin-left: 0px;
+		animation: sliding 13s infinite;
+	}
+   
+	.carousel div {
+		position: relative;
+		height:60%;
+		margin-top:0px;
+		background-size: 800px 100%;
+	}
+
+	#map .map {
+		position: relative;
+		display: block;
+		flex-direction: column;
+	}
+	#map .map-imgs {
+		position: relative;
+		display: inline;
+		left: -500px;
+	}
+	#map .map-title {
+		position: relative;
+		top: 150px;
+		min-width: 400px;
+		font-size: 5em;
+	}
+
+	#contents .contents-title{
+		position: relative;
+		min-width: 550px;
+		top: -150px;
+		font-size: 3.5em;
+	}
+
+	#contents .contents-imgs-phone {
+		top: 370px;
+	}
+
+	#review .review-title{
+		position: relative;
+		min-width: 280px;
+		top: -50px;
+		font-size: 3.5em;
+	}
+
+
+	#contact .contact {
+		flex-direction: column;
+		padding: 100px 0;
+		align-items: center;
+		justify-content: center;
+		min-width: 500px;
+		
+	}
+	#contact .contact-items {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0;
+	}
+	#contact .contact-item {
+		width: 30%;
+		margin: 0;
+		flex-direction: row;
+	}
+	#contact .contact-item .icon {
+		height: 100px;
+		width: 100px;
+	}
+	#contact .contact-item .icon img {
+		object-fit: contain;
+	}
+	#contact .contact-script{
+		font-size: 2em;
+	}
+	#contact .contact-item .contact-info {
+		width: 100%;
+		text-align: left;
+		padding-left: 20px;
+	}
+	#contents .contents {
+		min-width: 500px;
+	}
+
+	#review {
+		min-height: 900px;
+	}
+	#review .review{
+		min-width: 500px;
+		position: relative;
+		display: block;
+		flex-direction: column;	
+		width: 120%;
+		padding:0;
+		margin: 0;
+	}
+
+	#review .review-title {
+		position: relative;
+		top: 50px;
+	}
+	#review .review_im1 {
+		position: relative;
+		display: block;
+		visibility:visible;
+		top: 140px;
+		
+	}
+	#review .review_im2 {
+		position: relative;
+		display: block;
+		visibility:visible;
+		top: 140px;
+
+	}
+	#review .review_im3{
+		visibility:hidden;
+	}
+	#review .review-script-second{
+		position: relative;
+		display: block;
+		font-size: 1.6em;
+		top: 50px;
+		margin-top: -50px;
+	}
+
+	#footer .footer{
+		min-width: 500px;
+	}
+
+} 
 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
@@ -1933,6 +2340,9 @@ p {
 
 	/* End header */
 
+	#sm {
+		max-height: 800px;
+	}
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
 		margin: 1.5%;
