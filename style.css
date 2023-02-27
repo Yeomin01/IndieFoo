@@ -1189,7 +1189,7 @@ p {
 }
 #contents .contents_im1 {
 	position: relative;
-	width: 680px;
+	width: 690px;
 	height: 450px;
 	left: 50px;
 	bottom: 0px;
@@ -2324,11 +2324,13 @@ p {
 	#contents .contents-title{
 		position: relative;
 		min-width: 550px;
-		top: -150px;
 		font-size: 3em;
 		left: 50px;
 	}
 	#contents .contents-imgs-phone {
+		width: 300px;
+		height: 450px;
+		left: -50px;
 	}
 
 	#review .review-title{
