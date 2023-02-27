@@ -1142,7 +1142,7 @@ p {
 	height: 900px;
 	max-height: 900px;
 	background-image:url("https://i.ibb.co/Z2DsS0T/jjj-1.png");
-	background-size: 1090px 785px;
+	background-size: 920px 730px;
 	background-position: bottom left;
 	background-repeat: no-repeat;
 	position: relative;
@@ -1189,9 +1189,9 @@ p {
 }
 #contents .contents_im1 {
 	position: relative;
-	width: 760px;
-	height: 500px;
-	left: 0px;
+	width: 680px;
+	height: 450px;
+	left: 50px;
 	bottom: 0px;
 	/* -webkit-animation:myfirst-k 2s ; 
 	animation:myfirst-k 2s; */
@@ -1200,10 +1200,10 @@ p {
 
 #contents .contents_im2 {
 	position: absolute;
-	width: 700px;
-	height: 550px;
-	left: 440px;
-	bottom: 20px;
+	width: 650px;
+	height: 500px;
+	left: 400px;
+	bottom: 50px;
 	/* -webkit-animation:mysecond-k 2s ; 
 	animation:mysecond-k 2s; */
 }
@@ -1226,21 +1226,21 @@ p {
 	width: 80px;
 	height: 52px;
 	top: 360px;
-	left: 840px;
+	left: 780px;
 }
 #contents .contents_im4 {
 	position: absolute;
 	width: 85px;
 	height: 55px;
-	bottom: 340px;
-	left: 960px;
+	bottom: 360px;
+	left: 900px;
 }
 
 #contents .contents-script-first {
 	position: absolute;
 	width: 400px;
 	height: 93px;
-	left: 930px;
+	left: 880px;
 	top: 345px;
 
 	font-style: normal;
@@ -1254,7 +1254,7 @@ p {
 	position: absolute;
 	width: 400px;
 	height: 93px;
-	left: 1060px;
+	left: 1000px;
 	top: 470px;
 
 	font-style: normal;
