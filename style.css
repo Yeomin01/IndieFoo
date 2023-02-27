@@ -488,6 +488,7 @@ p {
 	position: relative;
 	width: 450px;
 	height: 90%;
+	left: -45px;
 	top: 5em;
 	-webkit-animation:myfirst 3s ; /* Chrome, Safari, Opera */
     animation:myfirst 3s;
@@ -498,7 +499,7 @@ p {
 	width: 450px;
 	height: 100%;
 	bottom: -5px;
-	left: -80px;
+	left: -120px;
 	-webkit-animation:mysecond 3s ; /* Chrome, Safari, Opera */
     animation:mysecond 3s;    
 	object-fit: cover;
@@ -507,7 +508,7 @@ p {
 	position: relative;
 	width: 450px;
 	height: 100%;
-	left: -80px;
+	left: -120px;
 	top: 0px;
 	-webkit-animation:mysthird 3s ; /* Chrome, Safari, Opera */
     animation:mythird 3s;
@@ -516,24 +517,24 @@ p {
     /* Chrome, Safari, Opera */
     @-webkit-keyframes myfirst
     {
-    0%   { left:0px; top:300px; opacity: 0;}
+    0%   { left:-45px; top:300px; opacity: 0;}
 
-    100% {left:0px; top:5em; opacity: 1;}
+    100% {left:-45px; top:5em; opacity: 1;}
     }
     
 	@-webkit-keyframes mysecond
 	{
-		0%   { left:-80px; bottom: -300px; opacity: 0;}
+		0%   { left:-120px; bottom: -300px; opacity: 0;}
 	
-		100% {left:-80px; bottom: -5px; opacity: 1;}
+		100% {left:-120px; bottom: -5px; opacity: 1;}
 	}
 		
 	
 	@-webkit-keyframes mythird
     {
-		0%   { left:-80px; top: -300px; opacity: 0;}
+		0%   { left:-120px; top: -300px; opacity: 0;}
 	
-		100% {left:-80px; top: 0px;opacity: 1;}
+		100% {left:-120px; top: 0px;opacity: 1;}
 		}       
     /* Standard syntax
     @keyframes myfirst
@@ -660,12 +661,12 @@ p {
 	position: absolute;
 	width: 760px;
 	height: 164px;
-	right: 130px;
+	right: 150px;
 	top: 180px;
 
 	font-style: normal;
 	font-weight: 500;
-	font-size: 4em;
+	font-size: 3.8em;
 	line-height: 82px;
 	text-align: right;
 	color: #FE6421;
@@ -676,13 +677,13 @@ p {
 	position: absolute;
 	width: 980px;
 	height: 130px;
-	right: 130px;
+	right: 150px;
 	top: 240px;
 	
 	font-style: normal;
 	text-align: right;
 	font-weight: 500;
-	font-size: 4em;
+	font-size: 3.8em;
 	line-height: 82px;
 	text-align: right;
 	color: #565656;
@@ -692,7 +693,7 @@ p {
 	position: absolute;
 	width: 25px;
 	height: 25px;
-	right: 385px;
+	right: 395px;
 	top: 235px;
 }
 
@@ -701,7 +702,7 @@ p {
 	height: 8px;
 	width: 650px;
 	top: 315px;
-	right: 130px;
+	right: 150px;
 	border-radius: 0px;
 }
 
@@ -710,13 +711,13 @@ p {
 	position: absolute;
 	height: 140px;
 	width: 570px;
-	right: 130px;
+	right: 150px;
 	top: 320px;
 
 	font-style: normal;
 	text-align: right;
 	font-weight: 700;
-	font-size: 8em;
+	font-size: 7.5em;
 	line-height: 140px;
 	/* identical to box height */
 	
@@ -732,7 +733,7 @@ p {
 	position: absolute;
 	width: 1166px;
 	height: 250px;
-	right: 130px;
+	right: 150px;
 	bottom: 0px;
 	
 	font-weight: 400;
@@ -947,7 +948,7 @@ p {
 	position: absolute;
 	width: 500px;
 	height: 198px;
-	left: 110px;
+	left: 70px;
 	top: 400px;
 	
 	font-weight: 500;
@@ -964,7 +965,7 @@ p {
 	position: absolute;
 	width: 110px;
 	height: 190px;
-	left: 1065px;
+	left: 1000px;
 	top: 190px;
 	opacity: 0.8;
 }
@@ -972,56 +973,56 @@ p {
 	position: absolute;
 	width: 54px;
 	height: 13px;
-	left: 1095px;
+	left: 1030px;
 	top: 395px;
 }
 #map .map_im3 {
 	position: absolute;
 	width: 400px;
 	height: 650px;
-	left: 700px;
+	left: 650px;
 	top: 180px;
 }
 #map .map_im4 {
 	position: absolute;
 	width: 400px;
 	height: 650px;
-	left: 500px;
+	left: 440px;
 	top: 220px;
 }
 #map .map_im5 {
 	position: absolute;
 	width: 120px;
 	height: 140px;
-	left: 960px;
+	left: 900px;
 	top: 570px;
 }
 #map .map_im6 {
 	position: absolute;
 	width: 150px;
 	height: 190px;
-	left: 550px;
+	left: 490px;
 	top: 340px;
 }
 #map .map_im7 {
 	position: absolute;
 	width: 180px;
 	height: 80px;
-	left: 480px;
+	left: 415px;
 	top: 570px;
 }
 #map .map_im8 {
 	position: absolute;
 	width: 120px;
 	height: 8px;
-	left: 1050px;
+	left: 990px;
 	top: 670px;
 }
 #map .map_im9 {
 	position: absolute;
 	width: 65px;
 	height: 7px;
-	left: 1060px;
+	left: 995px;
 	top: 485px;
 }
 
@@ -1029,7 +1030,7 @@ p {
 	position: absolute;
 	width: 315px;
 	height: 93px;
-	left: 1140px;
+	left: 1070px;
 	top: 470px;
 
 	font-style: normal;
@@ -1043,7 +1044,7 @@ p {
 	position: absolute;
 	width: 315px;
 	height: 93px;
-	left: 1185px;
+	left: 1120px;
 	top: 655px;
 
 	font-style: normal;
@@ -1169,14 +1170,16 @@ p {
 	top: 110px;
 	
 	font-weight: 700;
-	font-size: 50px;
+	font-size: 45px;
 	line-height: 70px;
+	letter-spacing: 1px;
 	color: #565656;
 }
 #contents .contents-title span{	
 	font-weight: 700;
-	font-size: 50px;
+	font-size: 45px;
 	line-height: 70px;
+	letter-spacing: 1px;
 	color: #FE6421;
 }
 #contents .contents-imgs-phone{
@@ -1186,9 +1189,9 @@ p {
 }
 #contents .contents_im1 {
 	position: relative;
-	width: 770px;
+	width: 760px;
 	height: 500px;
-	left: 20px;
+	left: 0px;
 	bottom: 0px;
 	/* -webkit-animation:myfirst-k 2s ; 
 	animation:myfirst-k 2s; */
@@ -1197,10 +1200,10 @@ p {
 
 #contents .contents_im2 {
 	position: absolute;
-	width: 780px;
-	height: 600px;
-	left: 400px;
-	bottom: 0px;
+	width: 700px;
+	height: 550px;
+	left: 440px;
+	bottom: 20px;
 	/* -webkit-animation:mysecond-k 2s ; 
 	animation:mysecond-k 2s; */
 }
@@ -1220,29 +1223,29 @@ p {
 
 #contents .contents_im3 {
 	position: absolute;
-	width: 96px;
-	height: 62px;
-	top: 320px;
-	left: 830px;
+	width: 80px;
+	height: 52px;
+	top: 360px;
+	left: 840px;
 }
 #contents .contents_im4 {
 	position: absolute;
-	width: 95px;
-	height: 60px;
-	bottom: 370px;
-	left: 1000px;
+	width: 85px;
+	height: 55px;
+	bottom: 340px;
+	left: 960px;
 }
 
 #contents .contents-script-first {
 	position: absolute;
 	width: 400px;
 	height: 93px;
-	left: 940px;
-	top: 310px;
+	left: 930px;
+	top: 345px;
 
 	font-style: normal;
 	font-weight: 400;
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 28px;
 	
 	color: #828282;
@@ -1251,12 +1254,12 @@ p {
 	position: absolute;
 	width: 400px;
 	height: 93px;
-	left: 1120px;
-	top: 460px;
+	left: 1060px;
+	top: 470px;
 
 	font-style: normal;
 	font-weight: 500;
-	font-size: 18px;
+	font-size: 17px;
 	line-height: 28px;
 	
 	color: #828282;
@@ -1354,7 +1357,7 @@ p {
 	font-weight: 700;
 	font-size: 60px;
 	line-height: 77px;
-	letter-spacing: 0.2px;
+	letter-spacing: 0.5px;
 	color: #565656;
 }
 #review .review-title span{	
@@ -1363,7 +1366,7 @@ p {
 	font-weight: 700;
 	font-size: 60px;
 	line-height: 70px;
-	letter-spacing: 0.2px;
+	letter-spacing: 0.5px;
 	color: #FE6421;
 }
 
@@ -1407,7 +1410,7 @@ p {
 
 	font-style: normal;
 	font-weight: 500;
-	font-size: 22px;
+	font-size: 20px;
 	letter-spacing: 0.2px;
 	line-height: 35px;
 	
@@ -1418,7 +1421,7 @@ p {
 #review .review-script-second span{	
 	font-style: normal;
 	font-weight: 500;
-	font-size: 22px;
+	font-size: 20px;
 	line-height: 10px;
 	letter-spacing: 0.2px;
 	
@@ -1428,8 +1431,8 @@ p {
 
 #review .review_im1 {
 	position: absolute;
-	width: 530px;
-	height: 280px;
+	width: 500px;
+	height: 260px;
 	left: -50px;
 	top: -170px;	
 	/* animation:myani-review 2s; */
@@ -1437,9 +1440,9 @@ p {
 }
 #review .review_im2 {
 	position: absolute;
-	width: 530px;
-	height: 280px;
-	left: 150px;
+	width: 500px;
+	height: 260px;
+	left: 120px;
 	top: 100px;	
 	/* animation:myani-review 2s; */
 }
