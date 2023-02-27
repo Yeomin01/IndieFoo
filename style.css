@@ -1530,12 +1530,11 @@ p {
 	padding-left: 80px;
 }
 #footer .brand {
-	left: 0;			
+	left: -30px;			
 	position: relative;
 	font-weight: 700;
 	font-size: 60px;
 	line-height: 64px;
-	text-align: left;
 	color: #FFFFFF;
 }
 
@@ -1553,7 +1552,7 @@ p {
 	display: flex;
 	align-items: center;
 	justify-content:space-between;
-	width: 17%;
+	width: 20%;
 	
 }
 
@@ -1974,7 +1973,7 @@ p {
 		top: 100px;
 		margin-top: -50px;
 	}
-
+	
 }
 
 /*Media Query For mobile*/
@@ -2179,9 +2178,11 @@ p {
 		margin-top: -50px;
 	}
 
-	#footer .footer{
-		min-width: 500px;
-	}
+	#footer .footer-script2{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 50%;	}
 
 }
 
@@ -2236,7 +2237,7 @@ p {
 		display: flex;
 		top: -100px;
 		left: -400px;
-		font-size: 0.6em;
+		font-size: 0.7em;
 		line-height: 0px;
 	}
 	#sm .sm-bar {
@@ -2248,10 +2249,10 @@ p {
 	#sm .sm-bigTitle div{
 		position: relative;
 		display: flex;
-		font-size: 0.8em;
+		font-size: 0.9em;
 		left: -110px;
 		top: -100px;
-		letter-spacing: 3px;
+		letter-spacing: 1px;
 	}
 	#sm .sm-script{
 		visibility: hidden;
@@ -2293,7 +2294,7 @@ p {
 		width: 360%;
 		height: 1000px;
 		bottom: 0;
-		margin-left: -60px;
+		margin-left: -90px;
 		animation: sliding 13s infinite;
 	}
    
@@ -2372,12 +2373,12 @@ p {
 		object-fit: contain;
 	}
 	#contact .contact-logo {
-		left: -50px;
+		left: -30px;
 	}
 
 	#contact .contact-script{
 		left: -50px;
-		font-size: 1.4em;
+		font-size: 1.5em;
 	}
 	#contact .contact-item .contact-info {
 		width: 100%;
@@ -2451,6 +2452,13 @@ p {
 	}
 	#footer .footer-script1{
 		font-size: 10px;
+	}
+	#footer .footer-script2 {
+		flex-direction: column;
+		display: flex;
+	}
+	#footer .footer-script2 a{
+		font-size: 5px;
 	}
 
 } 
