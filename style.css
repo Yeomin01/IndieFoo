@@ -2191,8 +2191,13 @@ p {
 
 	#main .main {
 		position: relative;
-		
 		left: -35px;
+	}
+	#main .main h2{
+		font-size: 2em;
+	}
+	#main .main h1{
+		font-size: 6.5em;
 	}
 	#sm {
 		max-height: 900px;
@@ -2228,24 +2233,25 @@ p {
 	
 	#sm .sm-title {
 		position: relative;
+		display: flex;
 		top: -100px;
-		font-size: 0.8em;
-		justify-content: center;
-		align-items: center;
+		left: -400px;
+		font-size: 0.6em;
+		line-height: 0px;
 	}
 	#sm .sm-bar {
 		position: relative;
 		display: flex;
-		right: 300px;
+		right: 370px;
 		top: -100px;
-		justify-content: center;
 	}
 	#sm .sm-bigTitle div{
 		position: relative;
 		display: flex;
-		justify-content: center;
-		font-size: 1.1em;
+		font-size: 0.8em;
+		left: -110px;
 		top: -100px;
+		letter-spacing: 3px;
 	}
 	#sm .sm-script{
 		visibility: hidden;
@@ -2320,7 +2326,7 @@ p {
 		position: relative;
 		min-width: 550px;
 		top: -150px;
-		font-size: 3.1em;
+		font-size: 3em;
 		left: 50px;
 	}
 
