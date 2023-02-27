@@ -2084,11 +2084,6 @@ p {
 		top: -150px;
 		font-size: 3.5em;
 	}
-
-	#contents .contents-imgs-phone {
-		top: 370px;
-	}
-
 	#review .review-title{
 		position: relative;
 		min-width: 280px;
@@ -2333,10 +2328,7 @@ p {
 		font-size: 3em;
 		left: 50px;
 	}
-
-	#contents .contents-im1 {
-		position: relative;
-		top: 370px;
+	#contents .contents-imgs-phone {
 	}
 
 	#review .review-title{
