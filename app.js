@@ -25,39 +25,19 @@ menu_item.forEach((item) => {
     menu_item.classList.toggle('active');
 	});
 });
+document.addEventListener('scroll', () => {
+  var scroll_position = window.scrollY;
+  var screen_width = window.innerWidth;
+  var elemnet = document.getElementsByClassName('menu_list');
 
-/* sm image slider start */
-let imageAnim = document.getElementById("image-animate");
+  console.log(screen_width); //브라우저 너비가 1200 이상일 때만 메뉴바 색 변경 적용
+  if(screen_width>=1200){
 
-let imageArray = [
-  "https://cdn.pixabay.com/photo/2022/09/04/20/11/plane-7432680_960_720.jpg",
-  "https://cdn.pixabay.com/photo/2017/11/04/13/43/texture-2917553_960_720.jpg",
-  "https://cdn.pixabay.com/photo/2022/07/20/18/44/reading-7334749_960_720.png"
-]
-
-let imageIndex = 0;
-
-const startImage = () =>{
-  imageAnim.setAttribute("src",imageArray[imageIndex]);
-  imageIndex++;
-  if(imageIndex >= imageArray.length){
-    imageIndex = 0;
-  }
+    if ( scroll_position > 700 ) {
+      header.style.backgroundColor = 'rgba(252, 112, 50)';
+    }
+    else {
+      header.style.backgroundColor = 'transparent';
+    }
 }
-
-setInterval(startImage,1000);
-
-/* sm image slider end */
-
-const spyEls = document.querySelectorAll('.scroll-spy')
-spyEls.forEach(function(spyEl){
-  new ScrollMagic
-    .Scene({ // 감시할 장면(Scene)을 추가
-      triggerElement: spyEl, // 보여짐 여부를 감시할 요소를 지정
-      triggerHook: .8 // 화면의 80% 지점에서 보여짐 여부 감시
-    })
-    .setClassToggle(spyEl, 'show') // 요소가 화면에 보이면 show 클래스 추가
-    .addTo(new ScrollMagic.Controller()) // 컨트롤러에 장면을 할당(필수!)
-})
-
-/*메뉴 클릭 시 색 변화 유지 */
+});  
