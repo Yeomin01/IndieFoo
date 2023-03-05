@@ -249,11 +249,28 @@
         인디푸에 대해 더 궁금하시다면, 이메일 주소를 입력하고<br>
         앱 출시 소식을 가장 먼저 받아보세요.
       </div>
+
+      <!-- 제출 시 alert창 -->
+      <script type="text/javascript">
+        function submitMs(){
+          alert("알림이 성공적으로 설정되었습니다")
+        }
+      </script>
+
       <div class="contact-email">
-        <form>
+        <form 
+        id="emailFrom"
+        class="gform"
+        method="POST" 
+        data-emial="yennieeoh@gmail.com "
+        action="https://script.google.com/macros/s/AKfycbxZe9TvyPGGPwWOImfJ0KLhZQbPkubyzj6uzW_qBkQGzR21QuIIbe_-MhxrBqUhV-0W/exec"
+        target="frAttachFiles"
+        onsubmit="submitMs()"
+        >
           <div>
             <input
               class="email-box"
+              name="IndieFoo"
               type="email"
               maxlength="64"
               pattern="[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]+[a-zA-Z]+[.]*[a-zA-Z]*"
@@ -285,6 +302,7 @@
           </div>
           
         </form>
+        <!-- <iframe name="frAttachFiles" style="display: none;"></iframe> -->
       </div>
     </div>
   </section>
@@ -333,6 +351,8 @@
     });
  
 </script>  
+<script data-cfasync="false" type="text/javascript"
+src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 </body>
 
 </html>
