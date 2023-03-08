@@ -2220,11 +2220,39 @@ p {
 		position: relative;
 		left: -35px;
 	}
-	#main .main h2{
+	/* #main .main h2{
 		font-size: 2em;
+	} */
+	#main .main h4{
+		font-size: 2em;
+		left: -20px;
 	}
-	#main .main h1{
-		font-size: 6.5em;
+	#main .main_logo{
+		width: 300px;
+		padding-left: 0px;
+	}	
+	.cta {
+		position: relative;
+		display: inline-block;
+		width: 500px;
+		left: 0px;
+		margin-top: 55px;
+	}
+
+	.cta .cta_App {
+		font-size: 14px;
+		padding: 12px 22px;
+		margin-left: 10px;
+		color: #FF7332;
+		background-color: #ffffff;
+		border-radius: 88px;
+	}
+	.cta .cta_Goolge {
+		font-size: 14px;
+		padding: 12px 20px;
+		color: #FF7332;
+		background-color: #ffffff;
+		border-radius: 88px;
 	}
 	#sm {
 		max-height: 900px;
