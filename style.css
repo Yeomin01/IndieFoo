@@ -53,18 +53,47 @@ p {
 
 
 .cta {
-	font-size: 17px;
+	/* font-size: 10px;
 	display: inline-block;
-	border-radius: 50px !important;
-	padding: 10px 30px;
-	color: #ffe1e1;
-	background-color: #d3480c;
-	text-align: center;
+	border-radius: 88px !important;
+	padding: 0px 0px;
+	color: #FF7332;
+	background-color: #ffffff;
 	margin-top: 30px;
 	transition: 0.3s ease;
-	transition-property: background-color, color;
+	width: 150px;
+	height: 50px;
+	transition-property: background-color, color;  */
 }
-.cta:hover {
+
+.cta {
+	position: relative;
+	display: inline-block;
+	width: 500px;
+	left: 20px;
+	margin-top: 55px;
+}
+
+.cta .cta_App {
+	font-size: 18px;
+	padding: 12px 32px;
+	margin-left: 10px;
+	color: #FF7332;
+	background-color: #ffffff;
+	border-radius: 88px;
+}
+.cta .cta_Goolge {
+	font-size: 18px;
+	padding: 12px 28px;
+	color: #FF7332;
+	background-color: #ffffff;
+	border-radius: 88px;
+}
+.cta_App:hover {
+	background-color: #d75a25;
+	color: #ffffff;
+}
+.cta_Goolge:hover {
 	background-color: #d75a25;
 	color: #ffffff;
 }
@@ -72,21 +101,14 @@ p {
 	position: relative;
 	padding-left: 30px;
 }
-.brand span {
-	position: absolute;
-	font-weight: 500;
-	left: 90px;
-	top: 6px;
-	font-size: 22px;
-
-	letter-spacing: 0.1rem;
-	text-decoration: none;
-	color: #ffffff;
-	/* text-shadow: 2px 2px 4px gray;  */
-}
-.brand img {
+.brand .brand_name {
 	position: static;
-	width: 40px;
+	width: 170px;
+	padding: 5px 20px;
+}
+.brand .brand_logo {
+	position: static;
+	width: 30px;
 	padding: 0px 0px;
 }
 
@@ -450,7 +472,6 @@ p {
 
 
 #main h1 {
-
 	display: block;
 	font-size: 7em;
 	position: relative;
@@ -458,16 +479,24 @@ p {
 	animation: text_reveal 0.5s ease forwards;
 	/* animation-delay: 1s; */
 }
-#main h2 {
+
+#main h4 {
 	font-style: normal;
 	font-weight: 500;
-	font-size: 48px;
+	font-size: 30px;
 	line-height: 56px;
+	padding-bottom: 10px;
+	padding-left: 20px;
 	
 	position: relative;
 	color: #ffffff;
 	/* animation: text_reveal 0.5s ease forwards;
 	animation-delay: 1s;  */
+}
+
+#main .main_logo {
+	padding-left: 20px;
+	width: 390px;
 }
 #main .main_con:nth-child(1) {
 	/* animation-delay: 1s; */
@@ -485,9 +514,9 @@ p {
 
 #main .iphone1 {
 	position: relative;
-	width: 450px;
+	width: 380px;
 	height: 90%;
-	left: -45px;
+	left: 20px;
 	top: 5em;
 	-webkit-animation:myfirst 3s ; /* Chrome, Safari, Opera */
     animation:myfirst 3s;
@@ -498,7 +527,7 @@ p {
 	width: 450px;
 	height: 100%;
 	bottom: -5px;
-	left: -120px;
+	left: -80px;
 	-webkit-animation:mysecond 3s ; /* Chrome, Safari, Opera */
     animation:mysecond 3s;    
 	object-fit: cover;
@@ -507,7 +536,7 @@ p {
 	position: relative;
 	width: 450px;
 	height: 100%;
-	left: -120px;
+	left: -80px;
 	top: 0px;
 	-webkit-animation:mysthird 3s ; /* Chrome, Safari, Opera */
     animation:mythird 3s;
@@ -516,24 +545,24 @@ p {
     /* Chrome, Safari, Opera */
     @-webkit-keyframes myfirst
     {
-    0%   { left:-45px; top:300px; opacity: 0;}
+    0%   { left:20px; top:300px; opacity: 0;}
 
-    100% {left:-45px; top:5em; opacity: 1;}
+    100% {left: 20px; top:5em; opacity: 1;}
     }
     
 	@-webkit-keyframes mysecond
 	{
-		0%   { left:-120px; bottom: -300px; opacity: 0;}
+		0%   { left:-80px; bottom: -300px; opacity: 0;}
 	
-		100% {left:-120px; bottom: -5px; opacity: 1;}
+		100% {left:-80px; bottom: -5px; opacity: 1;}
 	}
 		
 	
 	@-webkit-keyframes mythird
     {
-		0%   { left:-120px; top: -300px; opacity: 0;}
+		0%   { left:-80px; top: -300px; opacity: 0;}
 	
-		100% {left:-120px; top: 0px;opacity: 1;}
+		100% {left:-80px; top: 0px;opacity: 1;}
 		}       
     /* Standard syntax
     @keyframes myfirst
@@ -2465,10 +2494,10 @@ p {
 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
-	.cta {
-		font-size: 2.rem;
+	/* .cta {
+		font-size: 10px;
 		padding: 20px 60px;
-	}
+	} */
 	h1.section-title {
 		font-size: 6rem;
 	}
@@ -2574,8 +2603,10 @@ p {
 @media only screen and (min-width: 1200px) {
 
 	.cta {
-		font-size: 2.2rem;
-		padding: 20px 60px;
+		/* font-size: 1rem;
+		padding: 5px 5px;
+		text-align: center;
+		justify-content: center; */
 	}
 
 
