@@ -524,19 +524,19 @@ p {
 
 #main .iphone2 {
 	position: relative;
-	width: 450px;
+	width: 400px;
 	height: 100%;
 	bottom: -5px;
-	left: -80px;
+	left: -10px;
 	-webkit-animation:mysecond 3s ; /* Chrome, Safari, Opera */
     animation:mysecond 3s;    
 	object-fit: cover;
 }
 #main .iphone3 {
 	position: relative;
-	width: 450px;
+	width: 400px;
 	height: 100%;
-	left: -80px;
+	left: -10px;
 	top: 0px;
 	-webkit-animation:mysthird 3s ; /* Chrome, Safari, Opera */
     animation:mythird 3s;
@@ -552,17 +552,17 @@ p {
     
 	@-webkit-keyframes mysecond
 	{
-		0%   { left:-80px; bottom: -300px; opacity: 0;}
+		0%   { left:-10px; bottom: -300px; opacity: 0;}
 	
-		100% {left:-80px; bottom: -5px; opacity: 1;}
+		100% {left:-10px; bottom: -5px; opacity: 1;}
 	}
 		
 	
 	@-webkit-keyframes mythird
     {
-		0%   { left:-80px; top: -300px; opacity: 0;}
+		0%   { left:-10px; top: -300px; opacity: 0;}
 	
-		100% {left:-80px; top: 0px;opacity: 1;}
+		100% {left:-10px; top: 0px;opacity: 1;}
 		}       
     /* Standard syntax
     @keyframes myfirst
@@ -648,7 +648,7 @@ p {
 
 .carousel-container {
  position: relative;
-  width: 700px;
+  width: 720px;
   height: 100%;
   overflow: hidden;
   bottom: 0px;
@@ -658,7 +658,7 @@ p {
 
 .carousel {
   display: flex;
-  width: 300%;
+  width: 400%;
   height: 1000px;
   bottom: 0;
   margin-left: 0px;
@@ -670,21 +670,30 @@ p {
     width:720px;
 	height: 80%;
 	margin-top:0px;
-    background-size:1150px 100%;
-	background-position: bottom left;
-}
-.carousel div:hover{
-    animation-play-state: paused;
+    background-size:420px 75%;
+	background-position: bottom center;
 }
   .image-one {
-    background-image: url("https://i.ibb.co/09njBFX/1.png");
+    background-image: url("https://i.ibb.co/rQ2H360/Qa.png");
+	background-repeat: no-repeat;
+	background-size:contain;
   }
   .image-two {
-    background-image: url("https://i.ibb.co/c8zD3gV/2.png");
+    background-image: url("https://i.ibb.co/c6nG4Dc/Qa-ing-1.png");
+	background-repeat: no-repeat;
+	background-size:contain;
   }
   .image-three {
-    background-image: url("https://i.ibb.co/XxZjTQM/3.png");
+    background-image: url("https://i.ibb.co/bJ8MGkB/Qa-result.png");
+	background-repeat: no-repeat;
+	background-size:contain;
   }
+  .image-four {
+    background-image: url("https://i.ibb.co/qdJMg9N/Qa-result-1.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+  }
+
 .sm-title .sm-title-1{
 	position: absolute;
 	width: 760px;
@@ -765,7 +774,7 @@ p {
 	bottom: 0px;
 	
 	font-weight: 400;
-	font-size: 21px;
+	font-size: 22px;
 	line-height: 40px;
 	text-align: right;
 	
@@ -779,20 +788,26 @@ p {
 
 
 @keyframes sliding {
-  30% {
+  20% {
     transform: translateX(0);
   }
-  35% {
+  25% {
     transform: translateX(-720px);
   }
-  65% {
+  45% {
     transform: translateX(-720px);
+  }
+  50% {
+    transform: translateX(-1440px);
   }
   70% {
     transform: translateX(-1440px);
   }
-  98% {
-    transform: translateX(-1440px);
+  75% {
+    transform: translateX(-2150px);
+  }
+  95% {
+    transform: translateX(-2150px);
   }
   100% {
     transform: translateX(0);
@@ -984,6 +999,7 @@ p {
 	line-height: 99px;
 
 	color: #FFFFFF;
+	text-shadow: 2px 2px 4px gray; 
 	/* text-shadow: 1px 0px 0 rgb(0, 0, 0), -1px 0px 0 rgb(0, 0, 0), 0px 1px 0 rgb(0, 0, 0), 0px -1px 0 rgb(0, 0, 0)
 	,3px 7px 7px rgba(0, 0, 0, 0.25); */
 	
@@ -1170,7 +1186,7 @@ p {
 	height: 900px;
 	max-height: 900px;
 	background-image:url("https://i.ibb.co/Z2DsS0T/jjj-1.png");
-	background-size: 920px 730px;
+	background-size: 1050px 750px;
 	background-position: bottom left;
 	background-repeat: no-repeat;
 	position: relative;
@@ -1217,8 +1233,8 @@ p {
 }
 #contents .contents_im1 {
 	position: relative;
-	width: 690px;
-	height: 450px;
+	width: 800px;
+	height: 520px;
 	left: 50px;
 	bottom: 0px;
 	/* -webkit-animation:myfirst-k 2s ; 
@@ -1228,10 +1244,20 @@ p {
 
 #contents .contents_im2 {
 	position: absolute;
-	width: 650px;
-	height: 500px;
-	left: 400px;
-	bottom: 50px;
+	width: 800px;
+	height: 520px;
+	left: 370px;
+	bottom: 70px;
+	/* -webkit-animation:mysecond-k 2s ; 
+	animation:mysecond-k 2s; */
+}
+
+#contents .contents_im2_2 {
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	left: 600px;
+	bottom: 350px;
 	/* -webkit-animation:mysecond-k 2s ; 
 	animation:mysecond-k 2s; */
 }
@@ -1261,7 +1287,7 @@ p {
 	width: 85px;
 	height: 55px;
 	bottom: 360px;
-	left: 900px;
+	left: 890px;
 }
 
 #contents .contents-script-first {
@@ -1283,7 +1309,7 @@ p {
 	width: 400px;
 	height: 93px;
 	left: 1000px;
-	top: 470px;
+	top: 460px;
 
 	font-style: normal;
 	font-weight: 500;
@@ -1424,22 +1450,6 @@ p {
 	font-weight: 500;
 	font-size: 22px;
 	letter-spacing: 0.2px;
-	line-height: 41px;
-	
-	color: #565656;
-}
-
-#review .review-script-second {
-	position: absolute;
-	width: 800px;
-	height: 93px;
-	left: 90px;
-	top: 580px;
-
-	font-style: normal;
-	font-weight: 500;
-	font-size: 20px;
-	letter-spacing: 0.2px;
 	line-height: 35px;
 	
 	color: #565656;
@@ -1449,7 +1459,7 @@ p {
 #review .review-script-second span{	
 	font-style: normal;
 	font-weight: 500;
-	font-size: 20px;
+	font-size: 22px;
 	line-height: 10px;
 	letter-spacing: 0.2px;
 	
@@ -1560,23 +1570,21 @@ p {
 	justify-content: space-between;
 	padding-left: 80px;
 }
-#footer .brand {
+#footer .footer_brand {
 	left: -30px;			
 	position: relative;
-	font-weight: 700;
-	font-size: 60px;
-	line-height: 64px;
-	color: #FFFFFF;
+	padding-top: 20px;
+	width: 320px;
 }
 
 #footer .footer-script1 {
 	left: 0;			
 	position: relative;
-	font-weight: 300;
-	font-size: 15px;
-	line-height: 24px;
-	padding-top: 20px;
-	letter-spacing: 1px;
+	font-weight: 100;
+	font-size: 13px;
+	line-height: 23px;
+	padding-top: 7px;
+	letter-spacing: 0.5px;
 	color: #FFFFFF;
 }
 #footer .footer-script2 {
@@ -1681,7 +1689,7 @@ p {
 	.carousel-container {
 		position: relative;
 		overflow: hidden;
-		 width: 700px;
+		 width: 720px;
 		 height: 100%;
 		 overflow: hidden;
 		 bottom: 0px;
@@ -1692,7 +1700,7 @@ p {
 	   .carousel {
 		 display: flex;
 		 overflow: hidden;
-		 width: 300%;
+		 width: 400%;
 		 height: 1000px;
 		 animation: sliding 13s infinite;
 	   }
@@ -1700,11 +1708,11 @@ p {
 	   .carousel div {
 		   position: relative;
 		   overflow: hidden;
-		   width:1000px;
+		   width:720px;
 		   height: 80%;
 		   margin-top:0px;
-		   background-size: 1000px 100%;
-		   background-position: bottom left;
+		   background-size: 420px 75%;
+		   background-position: bottom center;
 	   }
 
 }
@@ -1800,7 +1808,7 @@ p {
 	.carousel-container {
 		position: relative;
 		overflow: hidden;
-		 width: 700px;
+		 width: 720px;
 		 height: 100%;
 		 overflow: hidden;
 		 bottom: 0px;
@@ -1811,7 +1819,7 @@ p {
 	   .carousel {
 		 display: flex;
 		 overflow: hidden;
-		 width: 300%;
+		 width: 400%;
 		 height: 1000px;
 		 animation: sliding 13s infinite;
 	   }
@@ -1819,18 +1827,15 @@ p {
 	   .carousel div {
 		   position: relative;
 		   overflow: hidden;
-		   width:1000px;
+		   width:720px;
 		   height: 80%;
 		   margin-top:0px;
-		   background-size: 1000px 100%;
-		   background-position: bottom left;
+		   background-size: 420px 75%;
+		   background-position: bottom center;
 	   }
 
 }
 @media only screen and (max-width:960px) {
-	.carousel-container {
-		/* visibility: hidden; */
-	}
 
 	#contact .contact {
 		flex-direction: column;
@@ -1923,28 +1928,31 @@ p {
 	}
 	#sm .carousel-container {
 		position: relative;
-		width: 600px;
+		width: 720px;
 		height: 100%;
-		top: 300px;
-		justify-content: center;
-		align-items: center;
+		overflow: hidden;
+		top: 200px;
+		left: 20px;
+
 	 /* padding: 10px 10px; */
     }
 	#sm .carousel {
 		display: flex;
-		width: 360%;
+		overflow: hidden;
+		width: 400%;
 		height: 1000px;
-		bottom: 0;
-		margin-left: 0px;
 		animation: sliding 13s infinite;
 	}
    
 	.carousel div {
 		position: relative;
+		width: 720px;
 		height:80%;
 		margin-top:0px;
-		background-size: 1100px 100%;
+		background-size: 450px 75%;
+		background-position: bottom center;
 	}
+ 
 	#review .review-title{
 		position: relative;
 		min-width: 280px;
@@ -2056,6 +2064,7 @@ p {
 	#sm .sm-script{
 		visibility: hidden;
 	}
+
 	#sm .carousel {
 		position: relative;		
 	}
@@ -2066,27 +2075,24 @@ p {
 	}
 	#sm .carousel-container {
 		position: relative;
-		width: 600px;
+		width: 720px;
 		height: 100%;
-		top: 300px;
-		justify-content: center;
-		align-items: center;
+		top: 100px;
+		left: -100px;
 	 /* padding: 10px 10px; */
     }
 	#sm .carousel {
 		display: flex;
-		width: 360%;
+		width: 400%;
 		height: 1000px;
-		bottom: 0;
-		margin-left: 0px;
 		animation: sliding 13s infinite;
 	}
    
 	.carousel div {
 		position: relative;
-		height:60%;
 		margin-top:0px;
-		background-size: 800px 100%;
+		background-size: 350px 65%;
+		background-position:bottom center;
 	}
 
 	#map .map {
@@ -2323,40 +2329,34 @@ p {
 		visibility: hidden;
 	} */
 
-	#sm.carousel{
-		position: relative;	
-		justify-content: center;
+	#sm .carousel {
+		position: relative;		
 	}
 
 	#sm .carousel-wrapper{
 		width: 2000px;
-		justify-content: center;
 
 	}
 	#sm .carousel-container {
 		position: relative;
-		width: 600px;
+		width: 720px;
 		height: 100%;
-		top: 300px;
-		justify-content: center;
-		align-items: center;
+		top: 100px;
+		left: -120px;
 	 /* padding: 10px 10px; */
     }
 	#sm .carousel {
 		display: flex;
-		justify-content: center;
-		width: 360%;
+		width: 400%;
 		height: 1000px;
-		bottom: 0;
-		margin-left: -90px;
 		animation: sliding 13s infinite;
 	}
    
 	.carousel div {
 		position: relative;
-		height:60%;
 		margin-top:0px;
-		background-size: 800px 100%;
+		background-size: 320px 65%;
+		background-position:bottom center;
 	}
 
 	#map .map {
@@ -2692,3 +2692,9 @@ p {
 		
 }
 /* End  Media Query For Desktop */
+
+@media only screen and (max-width: 1260px) {
+	#header .nav-list ul li a {
+		font-size: 1.5rem;
+	}
+}
